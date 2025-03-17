@@ -4,7 +4,7 @@ Overview
 
 This project is a simple authentication and user management API built using Node.js, Express.js, and MongoDB. It includes authentication using JWT and CRUD operations for managing user data.
 
-Since this is a short project, we have focused only on creating APIs without additional frontend or middleware.
+Since this is a short project, we have focused only on creating APIs without additional frontend
 
 
 
@@ -27,9 +27,7 @@ How to Run the Project
 
 2 -> Open a terminal.
 
-3 -> Navigate to the backend folder using:
-
-4 -> cd backend
+3 -> Navigate to the backend folder using: cd backend
 
 
 
@@ -40,28 +38,28 @@ Install dependencies:
 
 2 -> Start the server:
 
-    a) npm run start
-
+    a. npm run start
 
 3 -> Open Thunder Client or Postman to test the APIs.
+
 
 
 4 -> API Endpoints
 
 Authentication
 
-POST /signup - Register a new user.
+POST /signup - http://localhost:5000/user/signup
 
-POST /login - Login and get JWT token.
+POST /login - http://localhost:5000/user/login
 
-GET /logout - Logout user.
+GET /logout - http://localhost:5000/user/logout
 
 
 
 User Management
 
-GET /user/:id - Get user details.
+GET /user/getuser/:id - Get user details.  -> http://localhost:5000/user/getuser/67d8924bff40b2e86c9addad
 
-PUT /user/:id - Update user details.
+Patch /user/updateuser/:id - Update user details. -> http://localhost:5000/user/updateuser/67d8924bff40b2e86c9addad
 
-DELETE /user/:id - Delete user.
+DELETE /user/deleteuser/:id - Delete user. -> http://localhost:5000/user/deleteuser/67d8924bff40b2e86c9addad
